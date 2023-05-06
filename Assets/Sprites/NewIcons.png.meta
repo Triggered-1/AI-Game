@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 049bf78effd062f4e861f5bce74a3132
+guid: 61cc6becdcb0f2346809a87adc8f12a3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icons_0
+      name: Stone
       rect:
         serializedVersion: 2
         x: 0
@@ -125,20 +125,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e58708ae672c694ca441e37e9e42d4a
-      internalID: -1413443001
+      spriteID: 16845f34f0af93f4fb57394426faffa8
+      internalID: -520683933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Icons_1
+      name: GoldOre
       rect:
         serializedVersion: 2
         x: 16
@@ -146,20 +146,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62ab60aa05f165c46b32e0c962668869
-      internalID: -1646429962
+      spriteID: 4d43ce9925bceff48abc5b365c51a7fe
+      internalID: -569651589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Icons_2
+      name: Wood
       rect:
         serializedVersion: 2
         x: 32
@@ -167,20 +167,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e730ba40cc4f1645a87887d2a78bd8c
-      internalID: 1998226357
+      spriteID: 725c60396890a4c4a97e92e8d975d290
+      internalID: 376974074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Icons_3
+      name: Wheat
       rect:
         serializedVersion: 2
         x: 48
@@ -188,14 +188,56 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a0b313e8874d484b9f96c03ef43b6a1
-      internalID: -1622878266
+      spriteID: 9f69907b9127fd14a8ac269905d9fbc2
+      internalID: 1993254302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bread
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d08916d364658748aa828e04e2a2550
+      internalID: -645040616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad88323acd13869479da093302dab7f4
+      internalID: 922603213
       vertices: []
       indices: 
       edges: []
@@ -211,10 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Icons_1: -1646429962
-      Icons_3: -1622878266
-      Icons_2: 1998226357
-      Icons_0: -1413443001
+      Bread: -645040616
+      Fish: 922603213
+      Wheat: 1993254302
+      Stone: -520683933
+      Wood: 376974074
+      GoldOre: -569651589
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
