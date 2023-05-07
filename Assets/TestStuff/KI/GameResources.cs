@@ -11,6 +11,7 @@ public static class GameResources
     public static event Action OnWheatAmountChange;
     public static event Action OnFishAmountChange;
     public static event Action OnBreadAmountChange;
+    public static event Action OnVillagerAmountChange;
 
     private static int goldAmount; 
     private static int woodAmount; 
@@ -18,13 +19,9 @@ public static class GameResources
     private static int wheatAmount; 
     private static int breadAmount; 
     private static int fishAmount; 
+    private static int currentVillagerAmount; 
+    private static int maxVillagerAmount; 
 
-    public static void AddGoldAmount(int amount)
-    {
-        goldAmount += amount;
-        if (OnGoldAmountChange != null) OnGoldAmountChange();
-    }
-    
     public static void AddResourceAmount(int amount , ResourceType resourceType)
     {
         switch (resourceType)
@@ -58,6 +55,22 @@ public static class GameResources
         }
     }
 
+    public static void AddVillager(int amount,ChangeType changeType)
+    {
+        switch (changeType)
+        {
+            case ChangeType.Current:
+                currentVillagerAmount += amount;
+                if (OnVillagerAmountChange != null) OnVillagerAmountChange();
+                break;
+            case ChangeType.Max:
+                maxVillagerAmount += amount;
+                if (OnVillagerAmountChange != null) OnVillagerAmountChange();
+                break;
+            default:
+                break;
+        }
+    }
     public static int GetGoldAmount()
     {
         return goldAmount;
@@ -86,5 +99,15 @@ public static class GameResources
     public static int GetBreadAmount()
     {
         return breadAmount;
+    }
+
+    public static int GetMaxVillagerAmount()
+    {
+        return maxVillagerAmount;
+    }
+
+    public static int GetCurrentVillagerAmount()
+    {
+        return currentVillagerAmount;
     }
 }

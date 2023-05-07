@@ -23,7 +23,6 @@ public class Storage : MonoBehaviour, IGatherable
     private void Awake()
     {
         MainStorage.GoldStorages.Add(this);
-
     }
 
     // Start is called before the first frame update

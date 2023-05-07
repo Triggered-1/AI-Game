@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 615629080305998175}
   - component: {fileID: 4028556726436675409}
   - component: {fileID: 5558888440477522831}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LumberJack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ MonoBehaviour:
   gathererPrefab: {fileID: 8778297175947763784, guid: 509c150c766df3a4a9bec79a5bbb94c2, type: 3}
   spawnPositions:
   - {fileID: 615629080305998175}
-  maxCapacity: 50
+  maxCapacity: 85
   activeNPCs: 0
   storageType: 2
   StoredAmount: 0

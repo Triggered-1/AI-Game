@@ -32,7 +32,7 @@ public class BuildingSystem : MonoBehaviour
                     //DestroyTile(highlightedTilePos);
 
                 }
-            } 
+            }
         }
     }
 
@@ -89,8 +89,9 @@ public class BuildingSystem : MonoBehaviour
         {
             Debug.Log("Placed");
             GameObject newobj = Instantiate(itemToBuild.prefab, pos, Quaternion.identity);
-            buildingTilemap.SetTile(pos,itemToBuild.buildingSprite);
+            buildingTilemap.SetTile(pos, itemToBuild.buildingSprite);
             isBuilding = false;
+            if (itemToBuild.buildingType == BuildingType.House) GameResources.AddVillager(2, ChangeType.Max);
             Debug.Log(newobj.transform.position);
         }
         else

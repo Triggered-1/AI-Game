@@ -37,20 +37,11 @@ public class GatherAI : MonoBehaviour
 
     private void Awake()
     {
-        //if (!agent)
-        //{
-        //    agent = GetComponent<NavMeshAgent>();
-        //}
         if (!destinationSetter)
         {
             destinationSetter = GetComponent<AIDestinationSetter>();
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
+        GameResources.AddVillager(1, ChangeType.Current);
     }
 
     // Update is called once per frame

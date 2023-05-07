@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI wheatText;
     [SerializeField] private TextMeshProUGUI fishText;
     [SerializeField] private TextMeshProUGUI breadText;
+    [SerializeField] private TextMeshProUGUI villagerText;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
         GameResources.OnWheatAmountChange += ChangeWheatText;
         GameResources.OnFishAmountChange += ChangeFishText;
         GameResources.OnBreadAmountChange += ChangeBreadText;
+        GameResources.OnVillagerAmountChange += ChangeVillagerText;
     }
 
     public void ChangeGoldText()
@@ -52,5 +54,10 @@ public class GameManager : MonoBehaviour
     public void ChangeBreadText()
     {
         breadText.SetText(GameResources.GetBreadAmount().ToString());
+    }
+
+    public void ChangeVillagerText()
+    {
+        villagerText.SetText(GameResources.GetCurrentVillagerAmount().ToString() + "/" + GameResources.GetMaxVillagerAmount().ToString());
     }
 }

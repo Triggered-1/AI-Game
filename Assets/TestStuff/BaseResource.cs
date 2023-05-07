@@ -16,11 +16,6 @@ public class BaseResource : MonoBehaviour, IGatherable
         availableResources = maxResources;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     public int Gather(int miningPower, out bool resourceDestroyed)
     {
         availableResources -= miningPower;

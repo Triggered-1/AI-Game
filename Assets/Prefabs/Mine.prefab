@@ -43,8 +43,8 @@ GameObject:
   - component: {fileID: 8195428720773058676}
   - component: {fileID: -293839738660614771}
   - component: {fileID: -5294529556534624498}
-  - component: {fileID: 561162915383059956}
   - component: {fileID: 98587493588785109}
+  - component: {fileID: -7445423753961315247}
   m_Layer: 6
   m_Name: Mine
   m_TagString: Untagged
@@ -167,21 +167,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &561162915383059956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3126084416750196198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5f4678c08dd75545a7a529c7c13d5d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  workStationType: 2
-  workStationPos: {fileID: 1546329177420471730}
-  isOccupied: 0
 --- !u!114 &98587493588785109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,3 +181,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 3126084416750196198}
   buildingSprite: {fileID: 11400000, guid: e1af54c0a863f6442b2a3045a077b025, type: 2}
+  buildingType: 1
+--- !u!114 &-7445423753961315247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3126084416750196198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2be103bea209e341b342872ede9fdf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 2.5
+  gathererPrefab: {fileID: 8778297175947763784, guid: 509c150c766df3a4a9bec79a5bbb94c2, type: 3}
+  spawnPositions:
+  - {fileID: 778897822237615306}
+  maxCapacity: 45
+  activeNPCs: 0
+  storageType: 1
+  StoredAmount: 0
+  resourceLayer:
+    serializedVersion: 2
+    m_Bits: 2048

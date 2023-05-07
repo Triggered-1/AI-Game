@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6985620320416905008}
   - component: {fileID: -8368517781955300384}
   - component: {fileID: 4977960938000793505}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WindMill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1263799109448743032}
   buildingSprite: {fileID: 11400000, guid: 753a5505da91cd04a97c4bed0554aa3c, type: 2}
+  buildingType: 0
 --- !u!114 &4977960938000793505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +165,10 @@ MonoBehaviour:
   gathererPrefab: {fileID: 0}
   spawnPositions:
   - {fileID: 4710421812005729825}
-  maxCapacity: 300
+  maxCapacity: 90
   activeNPCs: 0
   storageType: 4
   StoredAmount: 0
+  resourceLayer:
+    serializedVersion: 2
+    m_Bits: 0

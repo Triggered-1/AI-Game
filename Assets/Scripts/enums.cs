@@ -18,3 +18,15 @@ public enum ResourceType
     Wheat,
     Bread
 }
+
+public enum BuildingType
+{
+    House,
+    Work
+}
+
+public enum ChangeType
+{
+    Current,
+    Max
+}

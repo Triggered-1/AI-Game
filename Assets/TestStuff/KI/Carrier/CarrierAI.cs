@@ -55,6 +55,7 @@ public class CarrierAI : MonoBehaviour
         {
             destinationSetter = GetComponent<AIDestinationSetter>();
         }
+        GameResources.AddVillager(1, ChangeType.Current);
     }
 
     // Start is called before the first frame update

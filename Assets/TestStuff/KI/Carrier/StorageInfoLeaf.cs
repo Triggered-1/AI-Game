@@ -7,12 +7,10 @@ public class StorageInfoLeaf : Node
     private CarrierAI controller;
     private MainStorage storage;
 
-
     public StorageInfoLeaf(CarrierAI controller, MainStorage storage)
     {
         this.controller = controller;
         this.storage = storage;
-
     }
 
     public override NodeState Evaluate()

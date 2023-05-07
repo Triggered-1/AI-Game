@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IGatherable
 {
-    public int Gather(int minigPower,out bool resourceDestroyed);
+    public int Gather(int gatherPower,out bool resourceDestroyed);
 
     public Vector3 GetPosition();
 
